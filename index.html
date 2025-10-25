@@ -3,109 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goiás Fight | Eventos e Notícias de Luta em Goiás</title>
+    <title>Goiás Fight | A Plataforma Premium de Lutas em Goiás</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
-            <h1 class="logo">Goiás <span class="fight">Fight</span></h1>
+            <h1 class="logo">GOIÁS<span class="fight-mark">FIGHT</span></h1>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#eventos"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
-                    <li><a href="#professores"><i class="fas fa-users"></i> Professores</a></li>
-                    <li><a href="#academias"><i class="fas fa-school"></i> Academias</a></li>
-                    <li><a href="#shopping"><i class="fas fa-shopping-bag"></i> Shopping</a></li>
-                    <li><a href="#" class="btn-cta-header" id="btn-inscrever">Inscreva-se / Divulgue</a></li>
+                    <li><a href="#eventos" class="nav-item">EVENTOS</a></li>
+                    <li><a href="#aulas" class="nav-item">AULAS & PROFESSORES</a></li>
+                    <li><a href="#academias" class="nav-item">ACADEMIAS</a></li>
+                    <li><a href="#shopping" class="nav-item">SHOPPING</a></li>
                 </ul>
             </nav>
+            <a href="#" class="btn-cta-header" id="btn-inscrever"><i class="fas fa-handshake"></i> DIVULGUE</a>
         </div>
     </header>
 
     <main>
+        <section class="hero-banner">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Onde a Paixão pela Luta Encontra o Profissionalismo.</h1>
+                    <p>Calendário completo dos melhores eventos de MMA, Jiu-Jitsu, Boxe e Muay Thai em Goiânia e todo o estado de Goiás.</p>
+                    <a href="#eventos" class="btn-hero-cta">VER CALENDÁRIO COMPLETO <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-promoters">
+            <div class="container">
+                <p>Você é promotor de eventos? Tenha o **Goiás Fight** como parceiro oficial de divulgação e inscrições.</p>
+                <a href="#" class="btn-primary-inverse">CLIQUE AQUI PARA DIVULGAR SEU EVENTO</a>
+            </div>
+        </section>
+
         <section id="eventos" class="section-eventos">
             <div class="container">
-                <h2>Próximos Eventos em Goiânia e Goiás</h2>
-                <div class="event-grid">
-                    <article class="event-card">
-                        <h3>GOIÁS BOXE CHALLENGE V</h3>
-                        <p class="data"><i class="far fa-calendar-alt"></i> 10 de Dezembro - 19:00h</p>
-                        <p class="local"><i class="fas fa-map-marker-alt"></i> Ginásio Municipal, Goiânia</p>
-                        <button class="btn-ingresso">Comprar Ingresso</button>
+                <h2>EVENTOS PREMIUM EM GOIÁS</h2>
+                <div class="event-grid-pro">
+                    <article class="event-card-pro">
+                        <img src="https://picsum.photos/300/200?random=1" alt="Boxe Challenge" class="event-img">
+                        <div class="card-body">
+                            <h3>GOIÁS BOXE CHALLENGE V - Edição Ouro</h3>
+                            <p class="details"><i class="fas fa-calendar-alt"></i> 10 de Dezembro | 19:00h</p>
+                            <p class="details"><i class="fas fa-map-marker-alt"></i> Ginásio Olímpico, Setor Central, Goiânia</p>
+                            <p class="type">Modalidades: **Boxe Olímpico & Profissional**</p>
+                            <button class="btn-ingresso-pro">COMPRAR INGRESSOS (A Partir de R$ 40)</button>
+                        </div>
                     </article>
 
-                    <article class="event-card">
-                        <h3>JIU-JITSU OPEN ESTADUAL</h3>
-                        <p class="data"><i class="far fa-calendar-alt"></i> 17 de Dezembro - 09:00h</p>
-                        <p class="local"><i class="fas fa-map-marker-alt"></i> Clube do Povo, Anápolis</p>
-                        <button class="btn-ingresso">Inscrever</button>
+                    <article class="event-card-pro">
+                        <img src="https://picsum.photos/300/200?random=2" alt="Jiu-Jitsu Open" class="event-img">
+                        <div class="card-body">
+                            <h3>JIU-JITSU OPEN ESTADUAL - Kids & Adultos</h3>
+                            <p class="details"><i class="fas fa-calendar-alt"></i> 17 de Dezembro | 09:00h</p>
+                            <p class="details"><i class="fas fa-map-marker-alt"></i> Clube do Povo, Anápolis - **Inscrições Abertas**</p>
+                            <p class="type">Modalidades: **Jiu-Jitsu (GI/NO-GI)**</p>
+                            <button class="btn-ingresso-pro btn-secondary-pro">FAZER INSCRIÇÃO (R$ 80 - R$ 120)</button>
+                        </div>
                     </article>
-                    
-                    <article class="event-card">
-                        <h3>MMA PRO NIGHT</h3>
-                        <p class="data"><i class="far fa-calendar-alt"></i> 25 de Novembro - 21:00h</p>
-                        <p class="local"><i class="fas fa-map-marker-alt"></i> Arena Fight Club, Aparecida</p>
-                        <button class="btn-ingresso">Comprar Ingresso</button>
+
+                    <article class="event-card-pro">
+                        <img src="https://picsum.photos/300/200?random=3" alt="MMA Pro Night" class="event-img">
+                        <div class="card-body">
+                            <h3>MMA PRO NIGHT - Batalha de Campeões</h3>
+                            <p class="details"><i class="fas fa-calendar-alt"></i> 25 de Novembro | 21:00h</p>
+                            <p class="details"><i class="fas fa-map-marker-alt"></i> Arena Fight Club, Aparecida de Goiânia</p>
+                            <p class="type">Modalidades: **MMA & Kickboxing**</p>
+                            <button class="btn-ingresso-pro">COMPRAR CADEIRA VIP</button>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="professores" class="section-professores bg-light">
+        <section id="aulas" class="section-aulas bg-light">
             <div class="container">
-                <h2>Encontre Seu Mestre de Luta</h2>
-                <div class="prof-grid">
-                    <div class="prof-card">
-                        <i class="fas fa-user-tie"></i>
-                        <h4>Prof. Ricardo 'O Tigre'</h4>
-                        <p>Especialista em Muay Thai e Kickboxing. Aulas particulares e em grupo.</p>
-                        <p class="contato"><i class="fab fa-whatsapp"></i> (62) 99999-9999</p>
-                    </div>
-                    <div class="prof-card">
-                        <i class="fas fa-user-tie"></i>
-                        <h4>Mestra Ana Souza</h4>
-                        <p>Faixa preta 3º Dan em Judô e Jiu-Jitsu. Foco em defesa pessoal feminina.</p>
-                        <p class="contato"><i class="fab fa-whatsapp"></i> (62) 88888-8888</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="academias" class="section-academias">
-            <div class="container">
-                <h2>Academias Parceiras</h2>
-                <div class="academy-grid">
-                    <div class="academy-card">
-                        <h3>Thunder Fight Team</h3>
-                        <p><i class="fas fa-star"></i> Artes: MMA, Boxe, Wrestling</p>
-                        <p><i class="fas fa-location-arrow"></i> Setor Bueno, Goiânia</p>
-                    </div>
-                    <div class="academy-card">
-                        <h3>Dojo da Águia</h3>
-                        <p><i class="fas fa-star"></i> Artes: Karatê, Judô, Kung Fu</p>
-                        <p><i class="fas fa-location-arrow"></i> Centro, Goiânia</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="shopping" class="section-shopping bg-light">
-            <div class="container">
-                <h2>Shopping Fight (Produtos Exclusivos)</h2>
-                <p>Aqui você encontra luvas, kimonos e acessórios de alta qualidade. **Área de Administração do Site.**</p>
-                <button class="btn-cta">Ver Produtos</button>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Goiás Fight. Todos os direitos reservados. | Desenvolvido para teste no Codespace.</p>
-        </div>
-    </footer>
-
-    <script src="scripts/main.js"></script>
-</body>
-</html>
+                <h2>TREINE COM A ELITE</h2>
+                <p class="subtitle
