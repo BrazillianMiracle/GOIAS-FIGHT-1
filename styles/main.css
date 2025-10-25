@@ -1,0 +1,222 @@
+/*
+ * ARQUIVO: styles/main.css
+ * Cor principal: Laranja vibrante
+ */
+
+:root {
+    --cor-principal: #FF4500; /* Laranja Escuro (Vivo) */
+    --cor-secundaria: #333333;
+    --cor-fundo-claro: #f4f4f4;
+    --cor-texto-claro: #ffffff;
+    --cor-texto-escuro: #1a1a1a;
+}
+
+/* Base e Tipografia */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto-escuro);
+    margin: 0;
+    background-color: var(--cor-fundo-claro);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    color: var(--cor-principal);
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-bottom: 3px solid var(--cor-principal);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Header (Cabeçalho) Personalizado e Profissional */
+.main-header {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claro);
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo .fight {
+    color: var(--cor-principal);
+}
+
+/* Navegação */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav li {
+    margin-left: 25px;
+}
+
+.main-nav a {
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav a i {
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
+.main-nav a:hover {
+    color: var(--cor-principal);
+}
+
+.btn-cta-header {
+    background-color: var(--cor-principal);
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: var(--cor-texto-claro) !important;
+    border: 2px solid var(--cor-principal);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-cta-header:hover {
+    background-color: #e03c00; /* Laranja um pouco mais escuro */
+    border-color: #e03c00;
+}
+
+/* Estilo das Seções */
+section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: var(--cor-fundo-claro);
+}
+
+/* Grid de Eventos */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.event-card {
+    background-color: var(--cor-texto-claro);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--cor-principal);
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card h3 {
+    color: var(--cor-secundaria);
+    margin-top: 0;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+}
+
+.event-card .data, .event-card .local {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.btn-ingresso {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-claro);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-ingresso:hover {
+    background-color: #e03c00;
+}
+
+/* Professores e Academias */
+.prof-grid, .academy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.prof-card, .academy-card {
+    background-color: var(--cor-texto-claro);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.prof-card i, .academy-card i {
+    font-size: 2.5em;
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+.prof-card h4, .academy-card h3 {
+    color: var(--cor-secundaria);
+    margin: 10px 0;
+}
+
+/* Seção Shopping */
+.section-shopping {
+    text-align: center;
+}
+
+.btn-cta {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-claro);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #111;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-secundaria);
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
